@@ -1,0 +1,7 @@
+[build]
+  command = "node scripts/build-ai-config.mjs"
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+
