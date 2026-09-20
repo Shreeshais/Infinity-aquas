@@ -792,7 +792,7 @@ if (quoteForm) {
       });
 
       if (!response.ok) {
-        throw new Error(`Submission failed with status ${response.status}`);
+        throw new Error(`Submission failed (HTTP ${response.status}). Please check if the form is registered in Netlify.`);
       }
 
       if (status) {
